@@ -26,9 +26,10 @@ namespace DT.EditableShapes {
 		}
 	}
 
+	[ExecuteInEditMode]
 	public class EditablePointCloudComponent<T, D> : MonoBehaviour where T : PointCloudPoint 
 																																 where D : IEditablePointCloudDelegate<T> {
-		// PRAGMA MARK - INTERFACE
+		// PRAGMA MARK - Interface 
 		public T[] Points {
 			get { return _points.ToArray(); }
 		}
@@ -89,7 +90,11 @@ namespace DT.EditableShapes {
 		}
 		
 		protected virtual void Awake() {
-			
+			this.HandlePointsUpdated();
+		}
+		
+		protected void OnEnable() {
+			this.HandlePointsUpdated();
 		}
 		
 		protected virtual void OnDrawGizmosSelected() {

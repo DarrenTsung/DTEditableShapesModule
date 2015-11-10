@@ -14,9 +14,9 @@ namespace DT.EditableShapes {
 	}
 
 	public class EditablePolygonComponent : EditablePointCloudComponent<PolygonPoint, IEditablePolygonDelegate> {
-		// PRAGMA MARK - INTERFACE
+		// PRAGMA MARK - Interface 
 		
-		// PRAGMA MARK - INTERNAL
+		// PRAGMA MARK - Internal
 		protected override void OnDrawGizmosSelected() {
 			Vector3 previousWorldPoint = this.WorldPointAtIndex(_points.Count - 1);
 			for (int index = 0; index < _points.Count; index++) {
