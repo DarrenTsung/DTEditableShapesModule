@@ -14,7 +14,7 @@ namespace DT.EditableShapes {
 	}
 
 	public class EditableLineComponent : EditablePointCloudComponent<LinePoint, IEditableLineDelegate> {
-		// PRAGMA MARK - INTERFACE
+		// PRAGMA MARK - Public Interface
 		
 		// PRAGMA MARK - INTERNAL
 		protected override void OnDrawGizmosSelected() {

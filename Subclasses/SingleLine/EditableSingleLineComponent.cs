@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace DT.EditableShapes {
 	public class EditableSingleLineComponent : EditableLineComponent {
-		// PRAGMA MARK - INTERFACE
+		// PRAGMA MARK - Public Interface
 		public override void AddPoint(Vector2 localPoint) {
 			// do nothing, start with two points - don't allow additional points
 		}

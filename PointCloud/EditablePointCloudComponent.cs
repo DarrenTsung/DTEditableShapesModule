@@ -29,7 +29,7 @@ namespace DT.EditableShapes {
 	[ExecuteInEditMode]
 	public class EditablePointCloudComponent<T, D> : MonoBehaviour where T : PointCloudPoint 
 																																 where D : IEditablePointCloudDelegate<T> {
-		// PRAGMA MARK - Interface 
+		// PRAGMA MARK - Public Interface 
 		public T[] Points {
 			get { return _points.ToArray(); }
 		}

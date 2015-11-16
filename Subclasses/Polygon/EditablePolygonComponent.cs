@@ -14,7 +14,7 @@ namespace DT.EditableShapes {
 	}
 
 	public class EditablePolygonComponent : EditablePointCloudComponent<PolygonPoint, IEditablePolygonDelegate> {
-		// PRAGMA MARK - Interface 
+		// PRAGMA MARK - Public Interface 
 		
 		// PRAGMA MARK - Internal
 		protected override void OnDrawGizmosSelected() {
